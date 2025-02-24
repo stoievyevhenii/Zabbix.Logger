@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItTechnologies.Zabbix.Logger", "ittechnologies.zabbix.logger\ItTechnologies.Zabbix.Logger.csproj", "{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2187F418-0970-4B28-8812-CDDC0F63CDBF}
+	EndGlobalSection
+EndGlobal
