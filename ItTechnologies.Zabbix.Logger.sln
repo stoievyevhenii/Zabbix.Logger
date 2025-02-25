@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItTechnologies.Zabbix.Logger", "ittechnologies.zabbix.logger\ItTechnologies.Zabbix.Logger.csproj", "{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItTechnologies.Zabbix.Logger.WebApi", "ItTechnologies.Zabbix.Logger.WebApi\ItTechnologies.Zabbix.Logger.WebApi.csproj", "{08A4B49B-E3AC-4C3F-B348-E8B15EA91545}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCE1F989-1F9B-4190-B5F6-EAF2D47B1527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A4B49B-E3AC-4C3F-B348-E8B15EA91545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A4B49B-E3AC-4C3F-B348-E8B15EA91545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A4B49B-E3AC-4C3F-B348-E8B15EA91545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A4B49B-E3AC-4C3F-B348-E8B15EA91545}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

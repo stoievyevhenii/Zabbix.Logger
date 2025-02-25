@@ -9,8 +9,19 @@ namespace ItTechnologies.Zabbix.Logger
     public class LogSender : ILogSender
     {
         private HttpClient _httpClient = new();
+
         private Request _request = new();
+
         private JsonSerializerOptions _serializeOptions = new();
+
+        public LogSender()
+        {
+        }
+
+        public LogSender(ServerConfigurations config)
+        {
+            InitConnection(config);
+        }
 
         public LogSender InitConnection(ServerConfigurations config)
         {

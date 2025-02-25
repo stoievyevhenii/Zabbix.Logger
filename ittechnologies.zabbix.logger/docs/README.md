@@ -4,6 +4,10 @@
 
 The Zabbix Logging Interface is a NuGet library designed to facilitate the logging of data to a Zabbix server. This library provides a simple and efficient way to send log messages from your .NET applications to a Zabbix server for monitoring and alerting.
 
+## ZABBIX configuration
+
+First of all , you need to configure the Zabbix server to receive logs from the Zabbix Logging Interface. How to do this is described in the [Stackverflow question](https://stackoverflow.com/questions/21938132/log-exceptions-from-net-application-to-zabbix).
+
 ## Usage
 
 Here's a basic example of how to use the Zabbix Logging Interface:
@@ -41,6 +45,45 @@ Here's a basic example of how to use the Zabbix Logging Interface:
     }
 ```
 
+OR
+
+```csharp
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddOpenApi();
+            builder.Services.AddZabbixLogger(new ServerConfigurations()
+            {
+                ApiKey = "XXXXXXXXXXX",
+                Host = "LogStore",
+                Url = "https://zabbix.personalservices.com"
+            });
+
+            var app = builder.Build();
+
+            if (app.Environment.IsDevelopment())
+            {
+                app.MapOpenApi();
+                app.MapScalarApiReference();
+            }
+
+            app.UseHttpsRedirection();
+
+            app.UseAuthorization();
+
+            app.MapControllers();
+
+            app.Run();
+        }
+    }
+```
+
+
 ### Usage
 ```csharp
     [HttpGet]
@@ -62,9 +105,9 @@ Here's a basic example of how to use the Zabbix Logging Interface:
 ```
 
 ### LogLevelValues class
-
+Default values for log level. You can pass every Item name, which was created in Zabbix server.
 ```csharp
-    public class LogLevelValues
+    public static class LogLevelValues
     {
         public const string Information = "Information";
         public const string Warning = "Warning";
