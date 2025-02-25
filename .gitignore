@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ItTechnologies.Zabbix.Logger.Cls/ItTechnologies.Zabbix.Logger.Cls.csproj
+/ItTechnologies.Zabbix.Logger.WebApi/ItTechnologies.Zabbix.Logger.WebApi.csproj
+/ItTechnologies.Zabbix.Logger.WebApi
